@@ -1,0 +1,214 @@
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1e3a66;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    background-color: #2a4a7a;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    flex: 1; 
+}
+
+/* Header */
+.header {
+    background-color: #2a4a7a;
+    padding: 20px 0;
+    border-bottom: 4px solid #4a90e2;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-header {
+    width: 70px;
+    height: auto;
+}
+
+.header-text h1 {
+    color: #a3c2e1;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.header-text p {
+    color: #cbd5e0;
+    font-size: 1rem;
+}
+
+.header-contact p {
+    color: #b0c7e5;
+    font-size: 0.9rem;
+}
+
+/* Navbar */
+.navbar {
+    background: #4a90e2;
+    padding: 12px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #a3c2e1;
+    color: #1e3a66;
+}
+
+/* Hero Section */
+.hero-content {
+    text-align: center;
+    padding: 40px;
+    background: url('background-image.jpg') no-repeat center center/cover;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Additional Section */
+.additional-section {
+    padding: 20px;
+    background-color: #2a4a7a;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.additional-section h2 {
+    font-size: 1.5rem;
+    color: #a3c2e1;
+    margin-bottom: 10px;
+}
+
+.additional-section p {
+    font-size: 1rem;
+    color: #cbd5e0;
+    margin-bottom: 15px;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #357ab8;
+}
+
+.visi-misi-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Memberikan jarak antar baris */
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.visi-misi-table th,
+.visi-misi-table td {
+    padding: 15px 20px;
+    text-align: left;
+    vertical-align: top;
+    border-radius: 8px; /* Membuat sudut sel lebih melengkung */
+}
+
+.visi-misi-table th {
+    background-color: #004080;
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.visi-misi-table tr:nth-child(even) td {
+    background-color: #e9f1f9; /* Warna background untuk baris genap */
+}
+
+.visi-misi-table tr:nth-child(odd) td {
+    background-color: #f4f8fc; /* Warna background untuk baris ganjil */
+}
+
+.visi-misi-table td {
+    color: #333;
+    border-left: 5px solid #004080; /* Garis dekoratif di kiri setiap sel */
+    border-top: 1px solid #cdd5e0; /* Garis halus di bagian atas sel */
+    line-height: 1.6; /* Jarak antar baris dalam sel */
+}
+
+/* Sel Konten Visi & Misi */
+.visi-misi-table .visi {
+    font-weight: bold;
+    color: #004080;
+}
+
+.visi-misi-table .misi {
+    font-weight: bold;
+    color: #004080;
+}
+/* Footer */
+.footer {
+    background-color: #2a4a7a; /* Selaras dengan header */
+    color: #a3c2e1;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: auto;
+    border-top: 4px solid #4a90e2; /* Selaras dengan border bawah header */
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #cbd5e0;
+}
